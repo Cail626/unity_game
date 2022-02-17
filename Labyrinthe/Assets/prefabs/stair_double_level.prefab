@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5177164593095280409}
   - component: {fileID: 5177164593095280408}
   m_Layer: 0
-  m_Name: stair
+  m_Name: stair_double_level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
