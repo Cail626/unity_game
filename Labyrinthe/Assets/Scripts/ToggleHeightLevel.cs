@@ -9,9 +9,6 @@ public class ToggleHeightLevel : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        var go = other.gameObject;
-        if (go == null || !other.gameObject.CompareTag("Player") || go.transform.parent.position.z == height)
-            return;
 
         if (enableCollider != null)
         {
@@ -22,7 +19,11 @@ public class ToggleHeightLevel : MonoBehaviour
         {
             foreach (var collider in disableCollider)
                 collider.gameObject.SetActive(false);
-        } 
+        }
+
+        var go = other.gameObject;
+        if (go == null || !other.gameObject.CompareTag("Player") || go.transform.parent.position.z == height)
+            return;
 
         var position = go.transform.position;
         var newPosition = new Vector3(position.x, position.y, height);

@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 5660613157774571344}
   - component: {fileID: 6977959773752106762}
   - component: {fileID: 7359421334014632079}
+  - component: {fileID: 1805914669}
   m_Layer: 0
   m_Name: Player_Isometric_Witch
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,6 +81,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 2
+--- !u!114 &1805914669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5660613157774571347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342cd58890a45984bba2b6b4aa3aa29f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
 --- !u!1 &5660613157959327808
 GameObject:
   m_ObjectHideFlags: 0
